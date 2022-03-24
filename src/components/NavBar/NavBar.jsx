@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../Button/Button.jsx'
+import { MyButton } from '../MyButton/MyButton.jsx'
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
@@ -97,7 +97,7 @@ function Navbar({ user, handleLogout }) {
             )}
             {button && 
                 <div>
-                    {user ? <Button buttonStyle='btn--outline' onClick={handleLogout} to="/">LOG OUT</Button> : <Button buttonStyle='btn--outline' to="sign-up">SIGN UP</Button>}
+                    {user ? <MyButton buttonStyle='btn--outline' onClick={handleLogout} to="/">LOG OUT</MyButton> : <MyButton buttonStyle='btn--outline' to="sign-up">SIGN UP</MyButton>}
                 </div>
             }
             </div>
