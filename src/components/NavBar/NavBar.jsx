@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { MyButton } from '../MyButton/MyButton.jsx'
 import { Link } from 'react-router-dom';
 import './NavBar.css';
+import LoginModal from '../LoginModal/LoginModal.jsx';
 
-function Navbar({ user, handleLogout }) {
+function Navbar({ user, handleLogout, handleSignupOrLogin }) {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -65,8 +66,11 @@ function Navbar({ user, handleLogout }) {
             </ul>
             ):(
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+				<li className='nav-item'>
+					<LoginModal className='loginModal' handleSignupOrLogin={handleSignupOrLogin} />
+				</li>
 
-                <li className='nav-item'>
+                {/* <li className='nav-item'>
                     <Link
                         to='/login'
                         className='nav-links'
@@ -74,7 +78,7 @@ function Navbar({ user, handleLogout }) {
                     >
                         Log In
                     </Link>
-                </li>
+                </li> */}
                 <li className='nav-item'>
                     <Link
                         to='/users'
@@ -97,7 +101,7 @@ function Navbar({ user, handleLogout }) {
             )}
             {button && 
                 <div>
-                    {user ? <MyButton buttonStyle='btn--outline' onClick={handleLogout} to="/">LOG OUT</MyButton> : <MyButton buttonStyle='btn--outline' to="sign-up">SIGN UP</MyButton>}
+                    {user ? <MyButton buttonStyle='btn--outline' onClick={handleLogout} to="/">LOG OUT</MyButton> : <MyButton buttonStyle='btn--outline' to="signup">SIGN UP</MyButton>}
                 </div>
             }
             </div>

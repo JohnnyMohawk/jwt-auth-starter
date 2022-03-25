@@ -59,9 +59,9 @@ const LoginForm = (props) => {
         />
       </div>
       <div>
-        <button className={styles.button}>Log In</button>
+        <button onClick={props.closeMobileMenu} className={styles.button}>Log In</button>
         <Link to="/">
-          <button>Cancel</button>
+          <button onClick={props.handleClose}>Cancel</button>
         </Link>
       </div>
     </form>

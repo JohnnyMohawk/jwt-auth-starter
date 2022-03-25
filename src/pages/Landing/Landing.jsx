@@ -1,10 +1,11 @@
 import styles from './Landing.module.css'
 
-const Landing = ({user}) => {
+const Landing = (props) => {
+  props.user ? console.log(props.user.name) : console.log("butts")
   return (
     <main className={styles.container}>
       <h1>
-        hello, {user ? user.name : "friend"}
+        hello, {props.user ? props.user.name : "friend"}
       </h1>
     </main>
   )

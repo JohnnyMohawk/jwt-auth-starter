@@ -1,0 +1,13 @@
+#loginButton {
+    height: 90px !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    color: #fff;
+    font-size: 20px !important;
+    /* margin: auto 0; */
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    /* height: 100% !important; */
+}

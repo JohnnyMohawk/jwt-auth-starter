@@ -6,6 +6,7 @@ import Login from '../Login/Login'
 import Landing from '../Landing/Landing'
 import Users from '../Users/Users'
 import * as authService from '../../services/authService'
+import LoginModal from '../../components/LoginModal/LoginModal'
 
 const App = () => {
 	const history = useHistory()
@@ -23,7 +24,7 @@ const App = () => {
 
 	return (
 		<>
-			<NavBar user={user} handleLogout={handleLogout}/>
+			<NavBar user={user} handleLogout={handleLogout} handleSignupOrLogin={handleSignupOrLogin} />
 			<Route exact path='/'>
 				<Landing user={user} />
 			</Route>
@@ -39,6 +40,12 @@ const App = () => {
 					<Login handleSignupOrLogin={handleSignupOrLogin}/>
 				}
 			</Route>
+			{/* <Route exact path='/login'>
+				{user ? 
+					<Redirect to='/' /> : 
+					<LoginModal handleSignupOrLogin={handleSignupOrLogin}/>
+				}
+			</Route> */}
 			<Route exact path='/users'>
 				{user ? <Users /> : <Redirect to='/login' />}
 			</Route>
