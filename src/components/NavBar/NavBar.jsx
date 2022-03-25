@@ -3,6 +3,7 @@ import { MyButton } from '../MyButton/MyButton.jsx'
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 import LoginModal from '../LoginModal/LoginModal.jsx';
+import SignUpModal from '../SignUpModal/SignUpModal.jsx';
 
 function Navbar({ user, handleLogout, handleSignupOrLogin }) {
     const [click, setClick] = useState(false);
@@ -101,7 +102,7 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
             )}
             {button && 
                 <div>
-                    {user ? <MyButton buttonStyle='btn--outline' onClick={handleLogout} to="/">LOG OUT</MyButton> : <MyButton buttonStyle='btn--outline' to="signup">SIGN UP</MyButton>}
+                    {user ? <MyButton buttonStyle='btn--outline' onClick={handleLogout} to="/">LOG OUT</MyButton> : <SignUpModal handleSignupOrLogin={handleSignupOrLogin} />}
                 </div>
             }
             </div>
