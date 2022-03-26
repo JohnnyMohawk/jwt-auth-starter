@@ -1,7 +1,6 @@
 import styles from './Landing.module.css'
 
 const Landing = (props) => {
-  // props.user ? console.log(props.user.name) : console.log("butts")
   return (
     <main className={styles.container}>
       <h1>
@@ -10,5 +9,5 @@ const Landing = (props) => {
     </main>
   )
 }
- 
+
 export default Landing

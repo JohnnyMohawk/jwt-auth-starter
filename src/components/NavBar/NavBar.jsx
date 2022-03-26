@@ -71,16 +71,6 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
 						<LoginModal handleSignupOrLogin={handleSignupOrLogin} />
 					
 				</li>
-
-                {/* <li className='nav-item'>
-                    <Link
-                        to='/login'
-                        className='nav-links'
-                        onClick={closeMobileMenu}
-                    >
-                        Log In
-                    </Link>
-                </li> */}
                 <li className='nav-item'>
                     <Link
                         to='/users'
@@ -91,13 +81,6 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
                     </Link>
                 </li>
                 <li>
-                    {/* <Link
-                        to='/signup'
-                        className='nav-links-mobile'
-                        onClick={closeMobileMenu}
-                    >
-                        Sign Up
-                    </Link> */}
 					<div className='nav-links-mobile'>
 					<SignUpModal buttonStyle='btn--outline' handleSignupOrLogin={handleSignupOrLogin} />
 					</div>

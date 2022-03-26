@@ -1,9 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-// import LoginForm from '../LoginForm/LoginForm';
 import { MyButton } from '../MyButton/MyButton';
 import SignupForm from '../SignupForm/SignupForm';
 import './SignUpModal.css'
@@ -38,10 +36,6 @@ export default function SignUpModal(props) {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Sign Up
           </Typography>
-          {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography> */}
-          {/* <LoginForm handleSignupOrLogin={props.handleSignupOrLogin} handleClose={handleClose} /> */}
           <SignupForm handleSignupOrLogin={props.handleSignupOrLogin} handleClose={handleClose} />
         </Box>
       </Modal>
