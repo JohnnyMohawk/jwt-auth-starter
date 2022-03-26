@@ -29,18 +29,18 @@ const App = () => {
 			<Route exact path='/'>
 				<Landing user={user} />
 			</Route>
-			<Route exact path='/signup'>
+			{/* <Route exact path='/signup'>
 				{user ? 
 					<Redirect to='/' /> : 
 					<Signup handleSignupOrLogin={handleSignupOrLogin}/>
 				}
-			</Route>
-			<Route exact path='/login'>
+			</Route> */}
+			{/* <Route exact path='/login'>
 				{user ? 
 					<Redirect to='/' /> : 
 					<Login handleSignupOrLogin={handleSignupOrLogin}/>
 				}
-			</Route>
+			</Route> */}
 			<Route exact path='/login-signup'>
 				{user ? 
 					<Redirect to='/' /> : 

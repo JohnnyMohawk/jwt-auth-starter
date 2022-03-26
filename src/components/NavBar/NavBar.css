@@ -70,12 +70,14 @@
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     /* padding: 0.5rem 1rem; */
-    /* width: 50px; */
+    width: 100px;
     /* height: 100%; */
 
-    padding: 8px 20px;
+    padding: 8px;
+
 }
 
 .logSignButton {
@@ -161,7 +163,7 @@
     .nav-links {
         /* text-align: center;
         padding: 2rem; */
-        width: 100%;
+        width: 100px;
         /* display: table; */
         display: flex;
         justify-content: center;
@@ -219,22 +221,34 @@
     .nav-links-mobile {
         display: block;
         text-align: center;
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         border-radius: 4px;
         width: 70%;
         text-decoration: none;
         font-size: 1.5rem;
         background-color: transparent;
         color: #fff;
-        padding: 14px 20px;
-        border: 1px solid #fff;
+        padding: 14px 10px;
+        /* border: 1px solid #fff; */
         transition: all 0.3s ease-out;
         font-family: 'PT Sans', sans-serif;
+
+        margin-right: 0;
     }
 
     .nav-links-mobile:hover {
-        background: #fff;
+        /* background: #fff;
         color: #242424;
-        transition: 250ms;
+        transition: 250ms; */
     }
+
+    .nav-links {
+
+    }
+
+    
+
+
+
+
 }

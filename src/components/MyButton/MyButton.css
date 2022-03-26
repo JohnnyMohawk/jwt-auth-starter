@@ -10,6 +10,7 @@
     cursor: pointer;
     font-family: 'PT Sans', sans-serif;
     /* font-family: 'Courier New', Courier, monospace; */
+    width: 120px;
 }
 
 .btn--primary {
