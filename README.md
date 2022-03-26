@@ -1,15 +1,15 @@
-# MERN Stack with JWT Auth Template
+# JNA JWT Auth Template w/ Responsive Nav
 
-This is a MERN Stack template that includes JWT Authentication.
+MERN Stack template that includes JWT Authentication, fully responsive navbar and forms in modals.
 
-Use this to go build things! 🚀
+Go build cool shit! 🚀
 
 ## To Use This Template
 
 __Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
 
 ```bash
-git clone https://github.com/SEI-Remote/mern-stack-jwt-auth-template <name-of-your-app-here>
+git clone https://github.com/JohnnyMohawk/jwt-auth-starter <name-of-your-app-here>
 cd <name-of-your-app-here>
 ```
 
@@ -18,10 +18,6 @@ Once you are in the project directory:
 ```bash
 rm -rf .git
 ```
-
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
-
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
 
 Re-initialize a git repository:
 
@@ -64,7 +60,4 @@ SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 Replace the `DATABASE_URL` and `SECRET` with values that you provide.
 
-Delete this README.md
-
-You're done!
-# jwt-auth-starter
+# JNAJWTAUTH
