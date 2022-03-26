@@ -56,13 +56,6 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
                 </li>
 
                 <li>
-                    {/* <Link
-                        to='/'
-                        className='nav-links-mobile'
-                        onClick={() => { handleLogout(); closeMobileMenu();}}
-                    >
-                        Log Out
-                    </Link> */}
 					<div className='nav-links-mobile'>
 						<MyButton buttonStyle='btn--outline' onClick={() => { handleLogout(); closeMobileMenu();}} to="/">LOG OUT</MyButton>
 					</div>
@@ -71,7 +64,6 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
             ):(
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 				<li className='nav-item'>
-						{/* <LoginModal handleSignupOrLogin={handleSignupOrLogin} /> */}
 						<LoginModal handleSignupOrLogin={handleSignupOrLogin} closeMobileMenu={closeMobileMenu} />
 				</li>
                 <li className='nav-item'>
