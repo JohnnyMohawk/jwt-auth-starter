@@ -206,3 +206,11 @@
         margin-right: 0;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .navbar-logo {
+        margin-left: -30px;
+        font-size: 1.75rem;
+        margin-top: 4px;
+    }
+}

@@ -33,7 +33,7 @@ const App = () => {
 				}
 			</Route>
 			<Route exact path='/users'>
-				{user ? <Users /> : <Redirect to='/login-signup' />}
+				{user ? <Users user={user} /> : <Redirect to='/login-signup' />}
 			</Route>
 		</>
 	)
