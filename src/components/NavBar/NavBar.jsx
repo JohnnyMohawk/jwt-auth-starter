@@ -56,13 +56,16 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
                 </li>
 
                 <li>
-                    <Link
+                    {/* <Link
                         to='/'
                         className='nav-links-mobile'
                         onClick={() => { handleLogout(); closeMobileMenu();}}
                     >
                         Log Out
-                    </Link>
+                    </Link> */}
+					<div className='nav-links-mobile'>
+						<MyButton buttonStyle='btn--outline' onClick={() => { handleLogout(); closeMobileMenu();}} to="/">LOG OUT</MyButton>
+					</div>
                 </li>
             </ul>
             ):(
