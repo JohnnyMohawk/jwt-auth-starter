@@ -94,7 +94,7 @@ const SignupForm = (props) => {
         </div>
       </div>
       <div className={styles.inputContainer}>
-        <button disabled={validForm} className={styles.button}>Sign Up</button>
+        <button onClick={props.closeMobileMenu} disabled={validForm} className={styles.button}>Sign Up</button>
         <Link to="/">
           <button onClick={props.handleClose} className={styles.button}>Cancel</button>
         </Link>

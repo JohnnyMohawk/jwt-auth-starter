@@ -37,7 +37,7 @@ export default function LoginModal(props) {
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         Log In
                     </Typography>
-                    <LoginForm handleSignupOrLogin={props.handleSignupOrLogin} handleClose={handleClose} />
+                    <LoginForm handleSignupOrLogin={props.handleSignupOrLogin} handleClose={handleClose} closeMobileMenu={props.closeMobileMenu} />
                 </Box>
             </Modal>
         </div>
