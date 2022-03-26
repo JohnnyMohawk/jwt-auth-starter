@@ -9,12 +9,18 @@
     border: none;
     cursor: pointer;
     font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .btn--primary {
-    background-color: var(--primary);
-    color: #242424;
-    border: 1px solid var(--primary);
+    /* background-color: var(--primary); */
+    /* color: #242424; */
+    /* border: 1px solid var(--primary); */
+    /* border: 40px solid var(--primary); */
+
+    background-color: transparent;
+    font-size: 1.25rem !important;
+    color: #fff;
 }
 
 .btn--outline {
@@ -23,6 +29,14 @@
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
+    width: 120px;
+}
+
+.btn--nooutline {
+    background-color: var(--primary);
+    color: #242424;
+    border: 1px solid var(--primary);
+    border: 40px solid var(--primary);
 }
 
 .btn--medium {

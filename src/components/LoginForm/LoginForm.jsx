@@ -32,36 +32,38 @@ const LoginForm = (props) => {
       onSubmit={handleSubmit}
       className={styles.container}
     >
-      <div className={styles.inputContainer}>
-        <label htmlFor="email-input" className={styles.label}>
-          Email
-        </label>
-        <input
-          type="text"
-          autoComplete="off"
-          id="email-input"
-          value={formData.email}
-          name="email"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="password-input" className={styles.label}>
-          Password
-        </label>
-        <input
-          type="password"
-          autoComplete="off"
-          id="password-input"
-          value={formData.password}
-          name="password"
-          onChange={handleChange}
-        />
+      <div className={styles.inputContainerWrap}>
+        <div className={styles.inputContainer}>
+          <label htmlFor="email-input" className={styles.label}>
+            Email
+          </label>
+          <input
+            type="text"
+            autoComplete="off"
+            id="email-input"
+            value={formData.email}
+            name="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div className={styles.inputContainer}>
+          <label htmlFor="password-input" className={styles.label}>
+            Password
+          </label>
+          <input
+            type="password"
+            autoComplete="off"
+            id="password-input"
+            value={formData.password}
+            name="password"
+            onChange={handleChange}
+          />
+        </div>
       </div>
       <div>
         <button onClick={props.closeMobileMenu} className={styles.button}>Log In</button>
         <Link to="/">
-          <button onClick={props.handleClose}>Cancel</button>
+          <button onClick={props.handleClose} className={styles.button}>Cancel</button>
         </Link>
       </div>
     </form>

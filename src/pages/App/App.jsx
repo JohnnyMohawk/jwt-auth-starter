@@ -7,6 +7,7 @@ import Landing from '../Landing/Landing'
 import Users from '../Users/Users'
 import * as authService from '../../services/authService'
 import LoginModal from '../../components/LoginModal/LoginModal'
+import LogInSignUpPage from '../LogInSignUpPage/LogInSignUpPage'
 
 const App = () => {
 	const history = useHistory()
@@ -40,14 +41,14 @@ const App = () => {
 					<Login handleSignupOrLogin={handleSignupOrLogin}/>
 				}
 			</Route>
-			{/* <Route exact path='/login'>
+			<Route exact path='/login-signup'>
 				{user ? 
 					<Redirect to='/' /> : 
-					<LoginModal handleSignupOrLogin={handleSignupOrLogin}/>
+					<LogInSignUpPage handleSignupOrLogin={handleSignupOrLogin}/>
 				}
-			</Route> */}
+			</Route>
 			<Route exact path='/users'>
-				{user ? <Users /> : <Redirect to='/login' />}
+				{user ? <Users /> : <Redirect to='/login-signup' />}
 			</Route>
 		</>
 	)

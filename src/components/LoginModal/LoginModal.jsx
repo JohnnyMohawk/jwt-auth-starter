@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import LoginForm from '../LoginForm/LoginForm';
 import './LoginModal.css'
+import { MyButton } from '../MyButton/MyButton';
 
 const style = {
   position: 'absolute',
@@ -25,7 +26,7 @@ export default function LoginModal(props) {
 
   return (
     <div>
-      <Button id='loginButton' onClick={handleOpen}>Log In</Button>
+      <MyButton buttonStyle={props.buttonStyle} onClick={handleOpen}>Log In</MyButton>
       <Modal
         open={open}
         onClose={handleClose}
@@ -33,10 +34,10 @@ export default function LoginModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          {/* <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Log In
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography> */}
           <LoginForm handleSignupOrLogin={props.handleSignupOrLogin} handleClose={handleClose} />

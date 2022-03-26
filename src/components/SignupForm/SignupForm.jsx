@@ -41,55 +41,57 @@ const SignupForm = (props) => {
       onSubmit={handleSubmit}
       className={styles.container}
     >
-      <div className={styles.inputContainer}>
-        <label htmlFor="name" className={styles.label}>
-          Name
-        </label>
-        <input
-          type="text"
-          autoComplete="off"
-          id="name"
-          value={formData.name}
-          name="name"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="email-input" className={styles.label}>Email</label>
-        <input
-          type="text"
-          autoComplete="off"
-          id="email"
-          value={formData.email}
-          name="email"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="password-input" className={styles.label}>
-          Password
-        </label>
-        <input
-          type="password"
-          autoComplete="off"
-          id="password"
-          value={formData.password}
-          name="password"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="confirm-input" className={styles.label}>
-          Confirm Password
-        </label>
-        <input
-          type="password"
-          autoComplete="off"
-          id="confirm-input"
-          value={formData.passwordConf}
-          name="passwordConf"
-          onChange={handleChange}
-        />
+      <div className={styles.inputContainerWrap}>
+        <div className={styles.inputContainer}>
+          <label htmlFor="name" className={styles.label}>
+            Name
+          </label>
+          <input
+            type="text"
+            autoComplete="off"
+            id="name"
+            value={formData.name}
+            name="name"
+            onChange={handleChange}
+          />
+        </div>
+        <div className={styles.inputContainer}>
+          <label htmlFor="email-input" className={styles.label}>Email</label>
+          <input
+            type="text"
+            autoComplete="off"
+            id="email"
+            value={formData.email}
+            name="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div className={styles.inputContainer}>
+          <label htmlFor="password-input" className={styles.label}>
+            Password
+          </label>
+          <input
+            type="password"
+            autoComplete="off"
+            id="password"
+            value={formData.password}
+            name="password"
+            onChange={handleChange}
+          />
+        </div>
+        <div className={styles.inputContainer}>
+          <label htmlFor="confirm-input" className={styles.label}>
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            autoComplete="off"
+            id="confirm-input"
+            value={formData.passwordConf}
+            name="passwordConf"
+            onChange={handleChange}
+          />
+        </div>
       </div>
       <div className={styles.inputContainer}>
         <button disabled={validForm} className={styles.button}>Sign Up</button>
@@ -100,5 +102,5 @@ const SignupForm = (props) => {
     </form>
   )
 }
- 
+
 export default SignupForm

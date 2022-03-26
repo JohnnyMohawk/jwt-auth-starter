@@ -31,7 +31,7 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
         <nav className='navbar'>
             <div className='navbar-container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                JWT Auth
+                JNAJWTAUTH
                 <i class="fas fa-code"></i>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
@@ -68,7 +68,8 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
             ):(
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 				<li className='nav-item'>
-					<LoginModal className='loginModal' handleSignupOrLogin={handleSignupOrLogin} />
+						<LoginModal handleSignupOrLogin={handleSignupOrLogin} />
+					
 				</li>
 
                 {/* <li className='nav-item'>
@@ -90,19 +91,22 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
                     </Link>
                 </li>
                 <li>
-                    <Link
+                    {/* <Link
                         to='/signup'
                         className='nav-links-mobile'
                         onClick={closeMobileMenu}
                     >
                         Sign Up
-                    </Link>
+                    </Link> */}
+					<div className='nav-links-mobile'>
+					<SignUpModal buttonStyle='btn--outline' handleSignupOrLogin={handleSignupOrLogin} />
+					</div>
                 </li>
             </ul>
             )}
             {button && 
-                <div>
-                    {user ? <MyButton buttonStyle='btn--outline' onClick={handleLogout} to="/">LOG OUT</MyButton> : <SignUpModal handleSignupOrLogin={handleSignupOrLogin} />}
+                <div className='logSignButton'>
+                    {user ? <MyButton buttonStyle='btn--outline' onClick={handleLogout} to="/">LOG OUT</MyButton> : <SignUpModal buttonStyle='btn--outline' handleSignupOrLogin={handleSignupOrLogin} />}
                 </div>
             }
             </div>

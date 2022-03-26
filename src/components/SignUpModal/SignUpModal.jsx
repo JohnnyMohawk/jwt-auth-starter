@@ -26,7 +26,7 @@ export default function SignUpModal(props) {
 
   return (
     <div>
-      <MyButton buttonStyle='btn--outline' id='loginButton' onClick={handleOpen}>Sign Up</MyButton>
+      <MyButton buttonStyle={props.buttonStyle} onClick={handleOpen}>Sign Up</MyButton>
       <Modal
         open={open}
         onClose={handleClose}

@@ -10,5 +10,5 @@ const LoginPage = (props) => {
     </main>
   )
 }
- 
+
 export default LoginPage
